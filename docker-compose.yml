@@ -7,6 +7,7 @@ services:
     ports:
       - "8000:8000"
     volumes:
+      - /var/www/html/vendor
       - .:/var/www/html
   db:
     image: mysql:5.7
@@ -21,7 +22,7 @@ services:
       MYSQL_ROOT_PASSWORD: 'tutoriel'
     ports:
       # <Port exposed> : < MySQL Port running inside container>
-      - '3309:3306'
+      - '3310:3306'
     expose:
       # Opens port 3306 on the container
       - '3306'
