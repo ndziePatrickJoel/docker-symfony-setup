@@ -15,4 +15,5 @@
 
 ###> symfony/web-server-bundle ###
 /.web-server-pid
+/data/
 ###< symfony/web-server-bundle ###
